@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Sunrise-home-page {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/flats-list-bg.png");
+    height: 80vh;
+    background-size: cover;
+}
+
+.Sunrise-home-page-card {
+    padding-top: 45px;
+    background-color: #ffffff;
+    height: 35px;
+    border-radius: 15px 15px 0px 0px;
+    font-family: Bree Serif;
+    text-align: center;
+}
+
+.Flat-list-page {
+    padding-top: 25px;
+    background-color: #222222;
+    height: 102vh;
+    font-family: Bree Serif;
+}
+
+.Flat-list-page-card2 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: Bree Serif;
+    margin: 10px 10px 15px 10px;
+}
+
+.hed {
+    font-size: 25px;
+    color: #f19116;
+}
+
+.hed-pg {
+    color: #0f0e46;
+}
+
+.pg {
+    color: #6c6b70;
+}
+
+.img {
+    height: 170px;
+    background-position: bottom;
+    margin-right: 5px;
+}
+
+.img-bhk {
+    height: 40vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.btn {
+    background-color: #f19116;
+    color: #ffffff;
+}
+
+.logo {
+    height: 25px;
+}
+
+.pg-1 {
+    color: #ffffff;
+}
+
+.details {
+    margin: 25px;
+}
+
+.btnnn {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
