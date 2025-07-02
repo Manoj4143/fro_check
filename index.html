@@ -1,68 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Logo & Search</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 15px 30px;
-        }
-
-        .logo img {
-            width: 120px; /* Adjust based on your logo size */
-        }
-
-        .search-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-container input {
-            padding: 8px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-            width: 200px;
-        }
-
-        .search-container button {
-            padding: 8px;
-            margin-left: 5px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .search-container button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Site Logo"> <!-- Replace with actual logo path -->
+    <div id="section-Sunrise-home-page" class="Sunrise-home-page d-flex flex-column justify-content-end">
+        <div class="Sunrise-home-page-card">
+            <h1 class="hed">Sunrise Avenue</h1>
+            <p class="pg">Move to what moves you</p>
+            <button type="button" class="btn btn-warning" onclick="display('section-Flat-list-page')">Book Flat</button>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
-    </nav>
+    </div>
 
+    <div id="section-Flat-list-page" class="Flat-list-page">
+        <h1 class="hed">Sunrise Avenue</h1>
+        <div class="Flat-list-page-card2 d-flex flex-row justify-content-start" onclick="display('section-3BHK-page')">
+            <img class="img" src="https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png" alt="" />
+            <div class="hed-pg">
+                <h1 class="card-hed">3BHK Flat</h1>
+                <p class="pg">This is a full furtunish with handmade furtunish including a luxuary suitable facilitites pack.</p>
+            </div>
+        </div>
+        <div class="Flat-list-page-card2 d-flex flex-row justify-content-start" onclick="display('section-2BHK-page')">
+            <img class="img" src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png" alt="" />
+            <div class="hed-pg">
+                <h1 class="card-hed">3BHK Flat</h1>
+                <p class="pg">This is a full furtunish with handmade furtunish including a luxuary suitable facilitites pack.</p>
+            </div>
+
+
+        </div>
+        <div class="Flat-list-page-card2 d-flex flex-row justify-content-start" onclick="display('section-4BHK-page')">
+            <img class="img" src="https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png" alt="" />
+            <div class="hed-pg">
+                <h1 class="card-hed">3BHK Flat</h1>
+                <p class="pg">This is a full furtunish with handmade furtunish including a luxuary suitable facilitites pack.</p>
+            </div>
+
+
+        </div>
+        <button type="button" class="btn btn-warning" onclick="display('section-Sunrise-home-page')">Back</button>
+    </div>
+
+    <div id="section-3BHK-page" class="Flat-list-page">
+        <img class="img-bhk" src="https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png" alt="" />
+        <div class="details">
+            <h1 class="hed">Rs 4000/-</h1>
+            <div class="logo-pg d-flex flex-row">
+                <img class="logo" src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" alt="" />
+                <p class="pg-1">D/N 5-2,food Street, Indore</p>
+            </div>
+
+
+            <h1 class="hed">Description</h1>
+            <p class="pg-1">A Contemporary home with more color and vibrancy. It is full furtunish with elegent furtunish with elegent furtunish. </p>
+        </div>
+        <div class="btnnn">
+            <button type="button" class="btn btn-warning" onclick="display('section-Sunrise-home-page')">Home</button>
+            <button type="button" class="btn btn-warning" onclick="display('section-Flat-list-page')">back</button>
+        </div>
+
+
+    </div>
+
+    <div id="section-2BHK-page" class="Flat-list-page">
+        <img class="img-bhk" src="https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png" alt="" />
+        <div class="details">
+            <h1 class="hed">Rs 4000/-</h1>
+            <div class="logo-pg d-flex flex-row">
+                <img class="logo" src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" alt="" />
+                <p class="pg-1">D/N 5-2,food Street, Indore</p>
+            </div>
+
+
+            <h1 class="hed">Description</h1>
+            <p class="pg-1">A Contemporary home with more color and vibrancy. It is full furtunish with elegent furtunish with elegent furtunish. </p>
+        </div>
+        <div class="btnnn">
+            <button type="button" class="btn btn-warning" onclick="display('section-Sunrise-home-page')">Home</button>
+            <button type="button" class="btn btn-warning" onclick="display('section-Flat-list-page')">back</button>
+        </div>
+
+    </div>
+
+    <div id="section-4BHK-page" class="Flat-list-page">
+        <img class="img-bhk" src="https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png
+" alt="" />
+        <div class="details">
+            <h1 class="hed">Rs 4000/-</h1>
+            <div class="logo-pg d-flex flex-row">
+                <img class="logo" src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" alt="" />
+                <p class="pg-1">D/N 5-2,food Street, Indore</p>
+            </div>
+
+
+            <h1 class="hed">Description</h1>
+            <p class="pg-1">A Contemporary home with more color and vibrancy. It is full furtunish with elegent furtunish with elegent furtunish. </p>
+        </div>
+        <div class="btnnn">
+            <button type="button" class="btn btn-warning" onclick="display('section-Sunrise-home-page')">Home</button>
+            <button type="button" class="btn btn-warning" onclick="display('section-Flat-list-page')">back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
 </body>
+
 </html>
